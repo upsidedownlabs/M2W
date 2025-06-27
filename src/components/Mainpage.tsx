@@ -104,7 +104,7 @@ const CommunicationInterface: React.FC = () => {
 
   const playSound = useCallback((soundFile: string) => {
     try {
-      const audio = new Audio(`/sounds/${soundFile}`);
+      const audio = new Audio(`./sounds/${soundFile}`);
       audio.volume = 0.7;
       audio.play().catch(error => {
         console.log('Audio play failed:', error);
