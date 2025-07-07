@@ -305,8 +305,6 @@ const CommunicationInterface: React.FC = () => {
     playSound(option.soundFile);
   };
 
-
-
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
