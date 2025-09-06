@@ -235,7 +235,7 @@ const CommunicationInterface: React.FC = () => {
         setMenuActive(false);
         setCurrentMenuIndex(0);
         // No reconnection logic here
-    }, []);
+    }, [setIsConnected, setMenuActive, setCurrentMenuIndex]);
 
     // Disconnect function remains similar but without reconnection concerns
     const disconnectDevice = useCallback(async () => {
@@ -466,7 +466,8 @@ const CommunicationInterface: React.FC = () => {
                     `}>
                                             <div className={`transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-slate-700'} ${isSelected ? 'text-green-400' : ''} ${isCurrentMenuOption ? 'text-purple-400' : ''}`}>
                                                 {React.isValidElement(option.icon) && typeof option.icon.type === "function"
-                                                    ? React.cloneElement(option.icon as React.ReactElement<any>, {
+                                                    // Only clone if it's a Lucide icon (has a 'name' property or is a known component)
+                                                    ? React.cloneElement(option.icon as React.ReactElement<{ className?: string }>, {
                                                         className: "w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
                                                     })
                                                     : option.icon}
