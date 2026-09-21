@@ -7,12 +7,12 @@
     "prebuild": "ts-node scripts/generateManifest.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "dotenv": "^16.6.0",
     "lucide-react": "^0.523.0",
-    "next": "^16.3.0",
+    "next": "^16.3.5",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "ts-node": "^10.9.2"
@@ -29,6 +29,6 @@
     "typescript": "^5"
   },
   "overrides": {
-    "js-yaml": "^4.3.1"
+    "js-yaml": "^4.3.2"
   }
 }
