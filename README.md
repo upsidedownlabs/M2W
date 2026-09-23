@@ -3,7 +3,9 @@
 **Speak with your eyes.**
 
 <p align="center">
-  <img src="media/m2w-step2.png" alt="M2W app overview" width="720">
+  <a href="https://youtu.be/kM2ivaYuCfE">
+    <img src="media/youtube-thumbnail.png" alt="M2W demo video" width="640">
+  </a>
 </p>
 
 ## Overview
