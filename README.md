@@ -21,7 +21,7 @@ M2W (Mind to Words) is a free, browser-based assistive communication app for peo
 | **6 Need Categories** | Food, Help, Outing, Television, Washroom and Water, each with its own spoken audio. |
 | **Spoken Feedback** | Plays a sound for the selected need, so the person nearby hears it announced. |
 | **Light / Dark Theme** | Switch between light and dark mode for comfortable viewing. |
-| **Zero Install** | Runs entirely in the browser as a static, installable web app. Nothing to download or set up. |
+| **Zero Install** | Runs entirely in the browser as a static web app. Nothing to download or set up. |
 
 ## Requirements
 
@@ -116,7 +116,7 @@ The menu is controlled entirely with blinks, detected from the forehead electrod
 | **Connect** | N/A | Connect to the NPG Lite as shown above. |
 | **Activate Menu** | Double blink | Opens the menu and highlights the first option (Food). |
 | **Switch Option** | Double blink | Moves the highlight to the next option, cycling through Food, Help, Outing, Television, Washroom and Water. |
-| **Select** | Triple blink | Chooses the highlighted option. The app plays that need's spoken audio out loud and highlights it green for a few seconds. |
+| **Select** | Triple blink | Chooses the highlighted option. The app plays that need's spoken audio out loud and highlights it green until you move to another option or the menu closes. |
 
 The menu also shows a **Menu Active** badge next to the connection status while it's open. If the device disconnects, the menu closes automatically.
 
